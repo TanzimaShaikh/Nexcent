@@ -6,11 +6,10 @@
     <title>Nexcent A Landing Page</title>
     <link rel="shortcut icon" href="/logo_icon.svg" type="image/x-icon" />
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
+      href="./node_modules/bootstrap/dist/css/bootstrap.min.css"
     />
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <style>
       html,
       body {
@@ -18,12 +17,16 @@
         overflow-x: hidden;
       }
     </style>
+    <link rel="stylesheet" href="./node_modules/aos/dist/aos.css" />
   </head>
   <body class="bg-body-tertiary">
     <!-- CONTAINER START -->
     <div class="container">
       <!-- NAVBAR START -->
-      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <nav
+        class="navbar navbar-expand-lg bg-body-tertiary"
+        data-aos="fade-down"
+      >
         <div class="container-fluid">
           <a class="navbar-brand d-flex gap-1" href="#">
             <img src="./logo.svg" alt="" />
@@ -77,7 +80,7 @@
       <section
         class="d-flex flex-md-row flex-column mt-5 gap-5 justify-content-between px-5 align-items-center"
       >
-        <article class="w-md-auto w-100">
+        <article class="w-md-auto w-100" data-aos="fade-right">
           <h1 class="fw-semibold">
             Lessons and insights <br /><span class="text-success"
               >from 8 years</span
@@ -86,24 +89,81 @@
           <p>Where to grow business as a photographer: site or social media?</p>
           <button class="btn btn-success btn-lg mt-3">Register</button>
         </article>
-        <img src="https://project-nexcent.vercel.app/HeroImg.svg" alt="" srcset="" class="mx-md-0 mx-5" />
+        <img
+          src="https://project-nexcent.vercel.app/HeroImg.svg"
+          alt=""
+          srcset=""
+          class="mx-md-0 mx-5"
+          data-aos="fade-left"
+        />
       </section>
       <!-- hero section end -->
 
       <!-- Our Client Section Start -->
       <section class="py-5 text-secondary">
-        <h1 class="d-flex justify-content-center fw-bold">Our Clients</h1>
-        <p class="d-flex justify-content-center text-center">
-          We have been working with some fortune 500+ clients
-        </p>
+        <article data-aos="fade-down">
+          <h1 class="d-flex justify-content-center fw-bold">Our Clients</h1>
+          <p class="d-flex justify-content-center text-center">
+            We have been working with some fortune 500+ clients
+          </p>
+        </article>
         <div class="d-flex flex-md-row justify-content-between py-4">
-          <img src="/Clients/client1.svg" alt="" />
-          <img src="/Clients/client2.svg" alt="" />
-          <img src="/Clients/client3.svg" alt="" />
-          <img src="/Clients/client4.svg" alt="" />
-          <img src="/Clients/client5.svg" alt="" />
-          <img src="/Clients/client6.svg" alt="" />
-          <img src="/Clients/client7.svg" alt="" />
+          <img
+            src="/Clients/client1.svg"
+            data-aos="fade-left"
+            data-aos-anchor="#example-anchor"
+            data-aos-offset="500"
+            data-aos-duration="1000"
+            alt=""
+          />
+          <img
+            src="/Clients/client2.svg"
+            data-aos="fade-left"
+            data-aos-anchor="#example-anchor"
+            data-aos-offset="500"
+            data-aos-duration="1000"
+            alt=""
+          />
+          <img
+            src="/Clients/client3.svg"
+            data-aos="fade-left"
+            data-aos-anchor="#example-anchor"
+            data-aos-offset="500"
+            data-aos-duration="1000"
+            alt=""
+          />
+          <img
+            src="/Clients/client4.svg"
+            data-aos="fade-left"
+            data-aos-anchor="#example-anchor"
+            data-aos-offset="500"
+            data-aos-duration="1000"
+            alt=""
+          />
+          <img
+            src="/Clients/client5.svg"
+            data-aos="fade-left"
+            data-aos-anchor="#example-anchor"
+            data-aos-offset="500"
+            data-aos-duration="1000"
+            alt=""
+          />
+          <img
+            src="/Clients/client6.svg"
+            data-aos="fade-left"
+            data-aos-anchor="#example-anchor"
+            data-aos-offset="500"
+            data-aos-duration="1000"
+            alt=""
+          />
+          <img
+            src="/Clients/client7.svg"
+            data-aos="fade-left"
+            data-aos-anchor="#example-anchor"
+            data-aos-offset="500"
+            data-aos-duration="1000"
+            alt=""
+          />
         </div>
       </section>
       <!-- Our Client Section End -->
@@ -111,10 +171,10 @@
       <!-- Manage section start -->
       <section class="d-md-flex justify-content-center text-center flex-column">
         <article class="text-secondary">
-          <h1 class="fw-semibold lh-base">
+          <h1 class="fw-semibold lh-base" data-aos="fade-left">
             Manage your entire community <br />in a single system
           </h1>
-          <p>Who is Nextcent suitable for?</p>
+          <p data-aos="fade-right">Who is Nextcent suitable for?</p>
         </article>
 
         <div
@@ -122,6 +182,9 @@
         >
           <div
             class="d-md-flex flex-column justify-content-center align-items-center gap-3 py-2 px-6"
+            data-aos="flip-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="2000"
           >
             <img src="/Features/icon1.svg" alt="" />
             <article class="text-center px-5 fw-bold text-secondary">
@@ -135,6 +198,9 @@
 
           <div
             class="d-md-flex flex-column justify-content-center align-items-center gap-3 py-2 px-6"
+            data-aos="flip-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="2000"
           >
             <img src="/Features/icon2.svg" alt="" />
             <article class="text-center px-5 fw-bold text-secondary">
@@ -148,6 +214,9 @@
 
           <div
             class="d-md-flex flex-column justify-content-center align-items-center gap-3 py-2 px-6"
+            data-aos="flip-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="2000"
           >
             <img src="/Features/icon3.svg" alt="" />
             <article class="text-center px-5 fw-bold text-secondary">
@@ -166,8 +235,8 @@
       <section
         class="d-flex flex-md-row flex-column w-md-auto w-100 my-5 mx-3 py-5 px-3 gap-5 text-secondary"
       >
-        <img src="/pixelgrade.svg" alt="" />
-        <article class="mx-md-5 mx-0 px-md-5 px-0 ">
+        <img src="/pixelgrade.svg" alt="" data-aos="fade-right" />
+        <article class="mx-md-5 mx-0 px-md-5 px-0" data-aos="fade-left">
           <h1 class="fw-semibold lh-base">
             The unseen of spending three years at
             <span class="text-success">Pixelgrade</span>
@@ -186,8 +255,10 @@
       <!-- The unseen section end -->
 
       <!-- helping section start -->
-      <section class="d-flex flex-md-row flex-column justify-content-around m-5 gap-5 text-secondary">
-        <article class="mx-2">
+      <section
+        class="d-flex flex-md-row flex-column justify-content-around m-5 gap-5 text-secondary"
+      >
+        <article class="mx-2" data-aos="fade-right">
           <h1 class="fw-semibold">
             Helping a local <br />
             <span class="text-success">business reinvent itself</span>
@@ -196,11 +267,14 @@
         </article>
 
         <!-- /main 2nd div -->
-        <div class="d-flex flex-md-row flex-row justify-content-center text-secondary px-5  gap-3">
+        <div
+          class="d-flex flex-md-row flex-row justify-content-center text-secondary px-5 gap-3"
+          data-aos="fade-left"
+        >
           <!-- line 1 start -->
-          <div class="row px-5 ">
+          <div class="row px-5">
             <!-- 1 -->
-            <div class="col">
+            <div class="col" data-aos="zoom-in">
               <div class="d-md-flex gap-3">
                 <img src="/Stats/icon1 (1).svg" alt="" />
                 <div>
@@ -211,7 +285,7 @@
             </div>
 
             <!-- 2 -->
-            <div class="col">
+            <div class="col" data-aos="zoom-in">
               <div class="d-md-flex gap-3">
                 <img src="/Stats/icon2 (1).svg" alt="" />
                 <div>
@@ -226,7 +300,7 @@
           <!-- line2 start -->
           <div class="row gap-5 px-5">
             <!-- 3 -->
-            <div class="col">
+            <div class="col" data-aos="zoom-in">
               <div class="d-md-flex gap-3">
                 <img src="/Stats/icon3 (1).svg" alt="" />
                 <div>
@@ -236,7 +310,7 @@
               </div>
             </div>
             <!-- 4 -->
-            <div class="col">
+            <div class="col" data-aos="zoom-in">
               <div class="d-md-flex gap-3">
                 <img src="/Stats/icon4.svg" alt="" />
                 <div>
@@ -256,8 +330,16 @@
       <section
         class="d-flex flex-md-row flex-column gap-5 mx-3 py-5 px-3 justify-content-center align-items-center text-secondary"
       >
-        <img src="/useImg.svg" alt=""  class="mx-md-0 mx-5">
-        <article class="mx-md-5 px-md-5 justify-content-center">
+        <img
+          src="/useImg.svg"
+          alt=""
+          class="mx-md-0 mx-5"
+          data-aos="fade-right"
+        />
+        <article
+          class="mx-md-5 px-md-5 justify-content-center"
+          data-aos="fade-left"
+        >
           <h1 class="fw-semibold lh-base">
             How to design your site footer like
             <span class="text-success">we did ?</span>
@@ -280,9 +362,9 @@
 
       <!-- tim section start -->
       <section class="d-md-flex gap-3 my-5">
-        <img src="/feedback.svg" alt="" />
+        <img src="/feedback.svg" alt="" data-aos="zoom-out" />
         <div class="mt-md-5 mx-3">
-          <p class="">
+          <p class="" data-aos="zoom-in">
             Maecenas dignissim justo eget nulla rutrum molestie. Maecenas
             lobortis sem dui, vel rutrum risus tincidunt ullamcorper. Proin eu
             enim metus. Vivamus sed libero ornare, tristique quam in, gravida
@@ -294,17 +376,19 @@
             Quisque vulputate odio neque, eget efficitur libero condimentum id.
             Curabitur id nibh id sem dignissim finibus ac sit amet magna.
           </p>
-          <h4 class="text-success ">Tim Smith</h4>
-          <p>British Dragon Boat Racing Association</p>
-          <div class="d-md-flex justify-content-between py-md-4 ">
-            <img src="/Clients/client1.svg" alt="" />
-            <img src="/Clients/client2.svg" alt="" />
-            <img src="/Clients/client3.svg" alt="" />
-            <img src="/Clients/client4.svg" alt="" />
-            <img src="/Clients/client5.svg" alt="" />
-            <img src="/Clients/client6.svg" alt="" />
-            <img src="/Clients/client7.svg" alt="" />
-            <h4 class="text-success fw-semibold">Meet all customers</h4>
+          <h4 class="text-success" data-aos="zoom-in">Tim Smith</h4>
+          <p data-aos="zoom-in">British Dragon Boat Racing Association</p>
+          <div class="d-md-flex justify-content-between py-md-4">
+            <img src="/Clients/client1.svg" alt="" data-aos="zoom-out-left" />
+            <img src="/Clients/client2.svg" alt="" data-aos="zoom-out-left" />
+            <img src="/Clients/client3.svg" alt="" data-aos="zoom-out-left" />
+            <img src="/Clients/client4.svg" alt="" data-aos="zoom-out-left" />
+            <img src="/Clients/client5.svg" alt="" data-aos="zoom-out-left" />
+            <img src="/Clients/client6.svg" alt="" data-aos="zoom-out-left" />
+            <img src="/Clients/client7.svg" alt="" data-aos="zoom-out-left" />
+            <h4 class="text-success fw-semibold" data-aos="zoom-out-left">
+              Meet all customers
+            </h4>
           </div>
         </div>
       </section>
@@ -312,9 +396,9 @@
 
       <!-- Caring section start -->
       <section class="my-5">
-        <article class="text-secondary ">
+        <article class="text-secondary" data-aos="zoom-in">
           <h1 class="text-center">Caring is the new marketing</h1>
-          <p class="text-center justify-content-center mx-md-5 px-md-5 mx-3 ">
+          <p class="text-center justify-content-center mx-md-5 px-md-5 mx-3">
             The Nexcent blog is the best place to read about the latest
             membership insights, trends and more. <br />See who‘s joining the
             community, read about how our community are <br />increasing their
@@ -324,6 +408,9 @@
         <div class="d-md-flex justify-content-between align-items-center mt-3">
           <div
             class="d-md-flex position-relative flex-column gap-3 justify-content-center align-items-center mt-md-0 mt-5"
+            data-aos="flip-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="2000"
           >
             <img src="/Readmore/how.svg" alt="" />
             <div
@@ -336,6 +423,9 @@
 
           <div
             class="d-md-flex position-relative flex-column gap-3 justify-content-center align-items-center mt-md-0 mt-5"
+            data-aos="flip-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="2000"
           >
             <img src="/Readmore/manage.svg" alt="" />
             <div
@@ -350,6 +440,9 @@
 
           <div
             class="d-md-flex position-relative flex-column gap-3 justify-content-center align-items-center mt-md-0 mt-5"
+            data-aos="flip-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="2000"
           >
             <img src="/Readmore/revamp.svg" alt="" />
             <div
@@ -364,7 +457,7 @@
       <!-- Caring section end -->
 
       <!-- get demo section start -->
-      <section class="text-center pb-5">
+      <section class="text-center pb-5" data-aos="zoom-in">
         <h1 class="text-center">
           Pellentesque suscipit <br />
           fringilla libero eu.
@@ -376,7 +469,10 @@
     <!-- CONTAINER END -->
 
     <!-- footer section start -->
-    <section class="container-fluid pt-5 py-5 px-5 bg-secondary">
+    <section
+      class="container-fluid pt-5 py-5 px-5 bg-secondary"
+      data-aos="fade-up"
+    >
       <div class="container d-md-flex gap-5 justify-content-between">
         <div>
           <div class="d-md-flex gap-2 mb-3">
@@ -449,11 +545,6 @@
       </div>
     </section>
     <!-- footer section end -->
-
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
+    <script src="./js/index.js" type="module"></script>
   </body>
 </html>
