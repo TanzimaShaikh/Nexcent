@@ -1,3 +1,6 @@
+// Import all of Bootstrap's JS
+import * as bootstrap from 'bootstrap'
+
 import AOS from "aos";
 // import "../node_modules/aos/dist/aos.css";
 
