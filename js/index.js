@@ -1,4 +1,5 @@
 // Import all of Bootstrap's JS
+import '../scss/index.scss'
 import * as bootstrap from 'bootstrap'
 
 import AOS from "aos";
